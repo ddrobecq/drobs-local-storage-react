@@ -45,4 +45,4 @@ function useLocalStorage (storageKey, defaultValue) {
   return [value, setValue];
 }
 
-module.exports = useLocalStorage
+module.exports = useLocalStorage;
