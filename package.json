@@ -1,0 +1,23 @@
+{
+  "name": "drobs-local-storage-react",
+  "version": "1.0.0",
+  "description": "react local storage hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "httpps://www.github.com/ddrobecq/local-storage-react"
+  },
+  "keywords": [
+    "react",
+    "local",
+    "storage"
+  ],
+  "author": "Drobs",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
