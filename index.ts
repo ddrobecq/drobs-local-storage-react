@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-function getStorage(storageKey:string, defaultValue:string) {
+function getStorage(storageKey:string, defaultValue:string):string {
     try {
         if (typeof window !== 'undefined') {
             const storedValue = window.localStorage.getItem(storageKey);
@@ -25,7 +25,7 @@ function getStorage(storageKey:string, defaultValue:string) {
 //  defaultValue : default content to get if no content is stored
 // description : React hook to set and get content in local storage
 // **********************************************
-export function useLocalStorage (storageKey:string, defaultValue:string) {
+export default function useLocalStorage (storageKey:string, defaultValue:string):any[] {
   const [value, setValue] = useState (initValue());
   
   function initValue() {
