@@ -7,8 +7,8 @@ npm install drobs-local-storage-react
 Import package in your react app
 import useLocalStorage from 'drobs-local-storage-react';
 
-add a state in your component with useLocalStorage
-const [name, setName] = useLocalStorage('key', 'John Doe');
+add a state in your component with useLocalStorage (keyName, defaultValue)
+const [name, setName] = useLocalStorage('name', 'John Doe');
 
 --- example ---
 'use client';
@@ -18,7 +18,7 @@ import styles from "./page.module.css";
 import useLocalStorage from 'drobs-local-storage-react';
 
 export default function Home() {
-  const [name, setName] = useLocalStorage('key', 'John Doe');
+  const [name, setName] = useLocalStorage('name', 'John Doe');
   return (
     <div className={styles.container}>
       <h1>Hello, {name}!</h1>
