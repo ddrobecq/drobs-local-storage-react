@@ -3,7 +3,8 @@
       "target": "ES6",
       "outDir": "./dist", // Specify the output folder for compiled JavaScript
       "allowJs": true,
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "declaration": true,
     },
     "include": ["./**/*.ts"], // Specify the path to your TypeScript files
     "exclude": ["dist", "node_modules"] // Specify the path to your TypeScript files

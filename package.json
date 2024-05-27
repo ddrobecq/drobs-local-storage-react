@@ -1,10 +1,12 @@
 {
   "name": "drobs-local-storage-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "react local storage hook",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
