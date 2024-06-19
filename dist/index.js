@@ -24,7 +24,7 @@ function getStorage(storageKey, defaultValue) {
 //  defaultValue : default content to get if no content is stored
 // description : React hook to set and get content in local storage
 // **********************************************
-export function useLocalStorage(storageKey, defaultValue) {
+export default function useLocalStorage(storageKey, defaultValue) {
     const [value, setValue] = useState(initValue());
     function initValue() {
         return getStorage(storageKey, defaultValue);

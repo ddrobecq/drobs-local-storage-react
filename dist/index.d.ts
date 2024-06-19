@@ -1,1 +1,1 @@
-export declare function useLocalStorage(storageKey: string, defaultValue: string): any[];
+export default function useLocalStorage(storageKey: string, defaultValue: string): [string, Function];
