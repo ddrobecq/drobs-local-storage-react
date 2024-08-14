@@ -1,16 +1,17 @@
+# Drobs Local Storage React
 This package proposes a react hook to read and set value from/to local storage
-
---- Install ---
-npm install drobs-local-storage-react
-
---- Use ---
+# Installation
+```bash
+npm install @drobs/local-storage-react
+```
+# Use
 Import package in your react app
-import useLocalStorage from 'drobs-local-storage-react';
-
-add a state in your component with useLocalStorage (keyName, defaultValue)
+Import useLocalStorage from 'drobs-local-storage-react';
+Add a hook in your component with useLocalStorage (keyName, defaultValue)
 const [name, setName] = useLocalStorage('name', 'John Doe');
 
 --- example ---
+```js
 'use client';
 
 import Image from "next/image";
@@ -36,3 +37,14 @@ export default function Home() {
     </div>
   );
 }
+```
+
+# Contribute
+## GitHub Repository
+<a href="https://github.com/ddrobecq/drobs-local-storage-react" target="_blank">GitHub</a>
+
+## Compile
+```bash
+npm run build
+```
+

@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from 'react';
 
+/**
+ * @function : getStorage
+ * get the stored value from local storage
+ * @param {string} storageKey  to read
+ * @param {string} defaultValue if no value is stored
+ * @returns {string} stored value or default value
+ */
 function getStorage(storageKey:string, defaultValue:string):string {
     try {
         if (typeof window !== 'undefined') {
@@ -19,12 +26,14 @@ function getStorage(storageKey:string, defaultValue:string):string {
     return defaultValue;
 }
 
-// **********************************************
-// function : useLocalStorage
-//  storageKey : key to get back the stored content
-//  defaultValue : default content to get if no content is stored
-// description : React hook to set and get content in local storage
-// **********************************************
+/**
+ * @hook useLocalStorage
+ * React hook to set and get content in local storage
+ * const [value, setValue] = useLocalStorage('key', 'default value');
+ * @param {string} storageKey to get back or set the stored content
+ * @param {string} defaultValue if no content is stored
+ * @returns {[string, Function]} stored value and function to set the value
+ */
 export default function useLocalStorage (storageKey:string, defaultValue:string):[string, Function] {
   const [value, setValue] = useState (initValue());
   
